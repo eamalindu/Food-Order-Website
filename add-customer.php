@@ -2,7 +2,6 @@
 session_start();
 include_once('dbConn.php');
 
-
 if (isset($_POST['btnRegister'])) {
 
     $email = $_POST['textEmail'];
@@ -19,11 +18,13 @@ if (isset($_POST['btnRegister'])) {
 
     $result = mysqli_query($conn,$isRegisteredSql);
 
+    //Check whether the email is already in use
     if (mysqli_num_rows($result) > 0) {
         $_SESSION['login-failed'] = '<script>showAlert("Email Already In Use !","bg-danger")</script>';
         header("Location: index.php");
     }
     else{
+        //pass the data to backend
         if (mysqli_query($conn, $sql)) {
             $_SESSION['login-failed'] = '<script>showAlert("Your Account Successfully Created !<br>Login Now","bg-success")</script>';
             header("Location: index.php");
