@@ -1,0 +1,25 @@
+.preloader {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url("../images/background-section.png");
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+
+}
+
+.loading {
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    color: white;
+}
+
+.loading img {
+    width: 250px;
+}

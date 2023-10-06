@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    background: black;
+}
+
+.top-banner {
+    background-image: url("../images/img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.text-translate {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.bg-orangered {
+    background: #ff5d1c;
+    opacity: 0.75;
+}
+
+.btn-orangered {
+    background-color: #ff5d1c;
+    color: white;
+}
+
+.btn-orangered:hover {
+    background-color: #d54f1a;
+    color: white;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: black;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ff5d1c;
+    border-radius: 5px;
+}
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: #ff5d1c;
+}
+
+::selection {
+    color: white;
+    background: #ff5d1c;
+}
+
+#section-2 {
+    background: url("../images/background-section.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#section-3 {
+    background: url("../images/background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#section-4 {
+    background: url("../images/background-2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#section-5 {
+    background: url("../images/background-3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.back-to-top {
+    background: #ff5d1c;
+    color: white;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+}
+
+.back-to-top:hover {
+    background: #d54f1a;
+    color: white;
+}
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    color: black;
+    font-size: 1.1rem;
+
+
+}
+
+.custom-table th {
+    background: mediumpurple;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+
+}
+
+.custom-table td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background: rgba(193, 104, 66, 0.41);
+    text-align: left;
+    text-transform: capitalize !important;
+}
+
+.custom-table tr {
+    border-bottom: 1px solid transparent;
+}
+
+.w-custom {
+    width: 50%;
+}
+
+.form-control:focus {
+    border-color: #ff5d1c;
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+.hidden{
+    display: none;
+}
+.custom-alert {
+    z-index: 1090 !important;
+    position: fixed;
+    top: 5px;
+    right: 10px;
+    border-color: transparent!important;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.95);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .w-custom {
+        width: 95%;
+    }
+
+    .c-icon {
+        display: none;
+    }
+    #btn-list{
+        display: none!important;
+    }
+}
+
+
