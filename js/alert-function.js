@@ -1,9 +1,11 @@
-//This function will show a bootstrap Alert
-//Function have two arguments -> msg and type
-//Pass the message you want to display as the first argument
-//Pass the background you want to display as the second argument
-//Example -> showAlert('Account created !','bg-success');
-//Alert will be automatically hidden after 1s
+/**
+ * This function will show a bootstrap Alert
+ * Function have two arguments -> msg and type
+ * Pass the message you want to display as the first argument
+ * Pass the background you want to display as the second argument
+ * Example -> showAlert('Account created !','bg-success');
+ * Alert will be automatically hidden after 1s
+ */
 function showAlert(msg, type) {
     const div = document.createElement('div');
     div.classList.add('alert', 'alert-danger', type, 'text-white', 'custom-alert', 'alert-dismissible', 'fade', 'show');
