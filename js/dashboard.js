@@ -25,6 +25,7 @@ window.addEventListener('DOMContentLoaded',()=>{
         if(radioDineIn.checked===true){
             divWhere.classList.add('hidden');
             paraWhere.classList.add('hidden');
+            radioLater.checked =  true;
         }
     });
 
