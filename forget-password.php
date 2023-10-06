@@ -27,7 +27,7 @@
 <body id="section-2" class="d-flex align-items-center justify-content-center min-vh-100">
 <div class="preloader">
     <div class="loading">
-        <img src="images/3dgifmaker73877.gif" alt="loading"/>
+        <img src="images/loader.gif" alt="loading"/>
     </div>
 </div>
 <div class="w-custom p-5 bg-black rounded-4">

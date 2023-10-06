@@ -31,7 +31,7 @@
 
 <div class="preloader">
     <div class="loading">
-        <img src="images/3dgifmaker73877.gif" alt="loading"/>
+        <img src="images/loader.gif" alt="loading"/>
     </div>
 </div>
 

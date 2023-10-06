@@ -33,7 +33,7 @@ if (isset($_SESSION["email"])) {
     <body id="section-5">
     <div class="preloader">
         <div class="loading">
-            <img src="../images/3dgifmaker73877.gif" alt="loading"/>
+            <img src="../images/loader.gif" alt="loading"/>
         </div>
     </div>
 

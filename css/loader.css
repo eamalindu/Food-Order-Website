@@ -12,14 +12,3 @@
     background-size: cover;
 
 }
-
-.loading {
-    width: 250px;
-    height: 250px;
-    text-align: center;
-    color: white;
-}
-
-.loading img {
-    width: 250px;
-}
