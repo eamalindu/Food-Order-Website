@@ -143,6 +143,7 @@ if (isset($_SESSION["email"])) {
         </div>
     </nav>
     </body>
+    <script src="../js/dashboard.js"></script>
     </html>
 <?php } else {
     $_SESSION['login-failed'] = '<script>showAlert("Please Login To Your Account !","bg-warning")</script>';

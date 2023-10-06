@@ -1,15 +1,19 @@
-//Reusable Component
-//this external validator can be used for multiple instances
-//instead of writing multiple code segments we can minimize the codes by writing a common validator that can be used at any place
+/**
+ * Reusable Component
+ * this external validator can be used for multiple instances
+ * instead of writing multiple code segments we can minimize the codes by writing a common validator that can be used at any place
+ */
 
 
-//This function have four arguments
-// 1) element -> use 'this'
-// 2) regex pattern (in string format) -> use '^$'
-// 3) Object -> The object that data should bind
-// 4) property -> object property
-//This function is called using onclick event handler
-//Example -> onclick="inputTextValidator(this,'^[A-Z][a-z]{2,19}$','employee','fullName')"
+/**
+ * This function have four arguments
+ * 1) element -> use 'this'
+ * 2) regex pattern (in string format) -> use '^$'
+ * 3) Object -> The object that data should bind
+ * 4) property -> object property
+ * This function is called using onclick event handler
+ * Example -> onclick="inputTextValidator(this,'^[A-Z][a-z]{2,19}$','employee','fullName')"
+ */
 const inputTextValidator = (element, pattern) => {
 
     //checking for element value (value cant be null)
@@ -49,13 +53,15 @@ const inputTextValidator = (element, pattern) => {
 
 }
 
-//This function have four arguments
-// 1) elementID -> use 'id' without quotation or 'this' keyword
-// 2) no pattern
-// 3) Object -> The object that data should bind
-// 4) property -> object property
-//This function is called using onchange event handler
-//Example -> onchange="selectStaticValueValidator(elementID,'','employee','civilStatus')"
+/**
+ * This function have four arguments
+ * 1) elementID -> use 'id' without quotation or 'this' keyword
+ * 2) no pattern
+ * 3) Object -> The object that data should bind
+ * 4) property -> object property
+ * This function is called using onchange event handler
+ * Example -> onchange="selectStaticValueValidator(elementID,'','employee','civilStatus')"
+ */
 const selectStaticValueValidator = (elementID,pattern,object,property) => {
    if(elementID.value !== ''){
         elementID.style.border = '1px solid green';
