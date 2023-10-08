@@ -142,6 +142,11 @@ if (isset($_SESSION["email"])) {
             </div>
         </div>
     </nav>
+<br/>
+    <div class="container-fluid mt-5 d-flex align-items-center justify-content-between gap-2">
+        <div class="card card-body bg-black text-white w-50">Hello</div>
+        <div class="card card-body bg-black text-white w-50">Hello</div>
+    </div>
     </body>
     <script src="../js/dashboard.js"></script>
     </html>
