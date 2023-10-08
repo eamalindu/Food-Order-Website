@@ -27,7 +27,6 @@ if (isset($_SESSION["email"])) {
         <!--Loader-->
         <link rel="stylesheet" href="../css/loader.css">
         <script src="../js/loader.js"></script>
-
     </head>
     <body id="section-5">
     <div class="preloader">
@@ -175,6 +174,15 @@ if (isset($_SESSION["email"])) {
                                     <label for="textShippingAddress" class="form-label">Shipping Address :</label>
                                     <input class="form-control bg-dark border-0 text-white" id="textShippingAddress" name="textShippingAddress" placeholder="Your Shipping Address"  required/>
                                 </div>
+                                    <h4 class="fw-bold text-white">Preferred Outlet</h4>
+                                    <div class="mb-3 text-white">
+                                        <label for="inputGroupSelect01" class="form-label">Outlet :</label>
+                                        <select class="form-select bg-dark border-0 text-muted" id="inputGroupSelect01">
+                                            <option selected disabled class="text-muted">Select Preferred Outlet</option>
+                                            <option value="Nittambuwa" class="text-white">Nittambuwa Outlet</option>
+                                            <option value="Gampaha" class="text-white">Gampaha Outlet</option>
+                                        </select>
+                                    </div>
                                     <div class="mb-3 d-flex justify-content-end gap-2">
                                         <button class="btn btn-success" id="btnUpdateProfile" name="btnUpdateProfile" type="submit">Update Bio</button>
                                     </div>
@@ -207,9 +215,6 @@ if (isset($_SESSION["email"])) {
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="card mt-1 border-0">
-                    <div class="card-body bg-black rounded-3"></div>
                 </div>
             </div>
         </div>
