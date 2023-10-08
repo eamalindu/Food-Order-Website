@@ -62,17 +62,17 @@ const inputTextValidator = (element, pattern) => {
  * This function is called using onchange event handler
  * Example -> onchange="selectStaticValueValidator(elementID,'','employee','civilStatus')"
  */
-const selectStaticValueValidator = (elementID,pattern,object,property) => {
+const selectStaticValueValidator = (elementID,pattern) => {
    if(elementID.value !== ''){
         elementID.style.border = '1px solid green';
        elementID.style.background = 'rgba(0,255,0,0.1)';
-       window[object][property] = elementID.value;
+
 
    }
    else{
        elementID.style.border = '1px solid red';
        elementID.style.background = 'rgba(255,0,0,0.1)';
-       window[object][property] = null;
+
    }
 }
 
@@ -80,12 +80,12 @@ const selectDynamicValueValidator = (elementID,pattern,object,property) => {
     if(elementID.value !== ''){
         elementID.style.border = '1px solid green';
         elementID.style.background = 'rgba(0,255,0,0.1)';
-        window[object][property] = JSON.parse(elementID.value);
+
     }
     else{
         elementID.style.border = '1px solid red';
         elementID.style.background = 'rgba(255,0,0,0.1)';
-        window[object][property] = null;
+
     }
 }
 

@@ -176,8 +176,8 @@ if (isset($_SESSION["email"])) {
                                 </div>
                                     <h4 class="fw-bold text-white">Preferred Outlet</h4>
                                     <div class="mb-3 text-white">
-                                        <label for="inputGroupSelect01" class="form-label">Outlet :</label>
-                                        <select class="form-select bg-dark border-0 text-muted" id="inputGroupSelect01">
+                                        <label for="selectOutlet" class="form-label">Outlet :</label>
+                                        <select class="form-select bg-dark text-white" id="selectOutlet" onchange="selectStaticValueValidator(selectOutlet,'')" required>
                                             <option selected disabled class="text-muted">Select Preferred Outlet</option>
                                             <option value="Nittambuwa" class="text-white">Nittambuwa Outlet</option>
                                             <option value="Gampaha" class="text-white">Gampaha Outlet</option>
