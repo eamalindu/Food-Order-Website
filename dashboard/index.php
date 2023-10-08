@@ -76,7 +76,7 @@ if (isset($_SESSION["email"])) {
                                 <i class="fal fa-user-circle"></i><br>My Account
                             </button>
                             <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
-                                <li><a class="dropdown-item" href="#"><i class="fal fa-user-edit"></i> My Account</a></li>
+                                <li><a class="dropdown-item" href="my-profile.php"><i class="fal fa-user-edit"></i> My Account</a></li>
                                 <li><a class="dropdown-item" href="logout.php"><i class="fal fa-sign-out"></i> Logout</a></li>
                             </ul>
                         </div>
