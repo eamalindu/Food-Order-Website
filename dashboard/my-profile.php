@@ -63,7 +63,7 @@ if (isset($_SESSION["email"])) {
                 <div class="offcanvas-body">
                     <p>Quick Access</p>
                     <div class="d-flex p-0 m-0 justify-content-between">
-                        <a href="index.php" target="_blank" class="text-white text-decoration-none">
+                        <a href="index.php" class="text-white text-decoration-none">
                             <button class="btn btn-dark text-white"><i class="fal fa-home"></i><br> Home</button>
                         </a>
                         <a class="text-white text-decoration-none">
@@ -192,7 +192,7 @@ if (isset($_SESSION["email"])) {
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 col-12">
+            <div class="col-lg-6 col-12 mt-lg-0 mt-3">
                 <div class="card border-0">
                     <div class="card-body bg-black rounded-3">
                         <div class="card border-0">
