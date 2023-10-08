@@ -154,18 +154,31 @@ if (isset($_SESSION["email"])) {
                                 <form action="" method="post">
                                     <div class="text-white mb-3">
                                         <label for="textFullName" class="form-label">Full Name :</label>
-                                        <input class="form-control bg-dark border-0 text-white" id="textFullName" name="textFullName" placeholder="Your Full Name"  required/>
+                                        <input class="form-control bg-dark border-0 text-white" id="textFullName" name="textFullName" placeholder="Your Full Name"  required onkeyup="inputTextValidator(this,'^[A-Z][a-z]{2,19}[ ][A-Z][a-z]{2,29}$')"/>
                                     </div>
                                     <div class="text-white mb-3">
                                         <label for="textEmailUser" class="form-label">Email :</label>
                                         <input class="form-control bg-dark border-0 text-white" id="textEmailUser" name="textEmailUser" placeholder="example@domain.com" value="<?php echo $_SESSION['email']?>" required
                                                readonly/>
                                     </div>
+                                    <div class="text-white mb-3">
+                                        <label for="textContactNumber" class="form-label">Contact Number :</label>
+                                        <input class="form-control bg-dark border-0 text-white" id="textContactNumber" name="textContactNumber" placeholder="07x xxxx xxx" required onkeyup="inputTextValidator(this,'^[0][7][01245678][0-9]{7}$')" />
+                                    </div>
+
+                                <h4 class="fw-bold text-white">Address</h4>
+                                <div class="text-white mb-3">
+                                    <label for="textBillingAddress" class="form-label">Billing Address :</label>
+                                    <input class="form-control bg-dark border-0 text-white" id="textBillingAddress" name="textBillingAddress" placeholder="Your Billing Address"  required onkeyup="inputTextValidator(this,'^[a-zA-Z-0-9]{2,19}[ ][A-Za-z0-9/\//]{2,29}[,][ ][A-Z][a-z]{2,29}$')"/>
+                                </div>
+                                <div class="text-white mb-3">
+                                    <label for="textShippingAddress" class="form-label">Shipping Address :</label>
+                                    <input class="form-control bg-dark border-0 text-white" id="textShippingAddress" name="textShippingAddress" placeholder="Your Shipping Address"  required/>
+                                </div>
                                     <div class="mb-3 d-flex justify-content-end gap-2">
-                                        <button class="btn btn-success" id="btnUpdateProfile" name="btnUpdateProfile" type="submit">Update Profile</button>
+                                        <button class="btn btn-success" id="btnUpdateProfile" name="btnUpdateProfile" type="submit">Update Bio</button>
                                     </div>
                                 </form>
-
                             </div>
                         </div>
                     </div>
@@ -195,9 +208,13 @@ if (isset($_SESSION["email"])) {
                         </div>
                     </div>
                 </div>
+                <div class="card mt-1 border-0">
+                    <div class="card-body bg-black rounded-3"></div>
+                </div>
             </div>
         </div>
     </div>
+    <script src="../js/external-validator.js"></script>
     <script src="../js/alert-function.js"></script>
     <script src="../js/my-profile.js"></script>
     </body>
